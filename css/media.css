@@ -2,4 +2,35 @@
     .nav {
         display: none;
     }
+
+    .technoleges {
+        top: 13%;
+    }
+
+    .technoleges__javascript {
+        display: block;
+    }
+
+    .technoleges__react {
+        display: block;
+    }
+
+    .technoleges__typeScript {
+        display: block;
+    }
+
+    .technoleges__nodeJS {
+        display: block;
+    }
+
+    .img__tech {
+        margin: auto;
+    }
+
+    .about__tech {
+        padding: 0px 30px 30px 30px;
+        margin: 0;
+        font-size: 15px;
+        text-align: center;
+    }
 }
