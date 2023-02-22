@@ -338,24 +338,12 @@ function press(el) {
     el.innerHTML = "PRESS " + pressI;
 }
 
-function again(arr) {
-    let m = 0;
-
-    for(let i = 0; i < arr.length; i++) {
-        m += arr[i];
-    }
-    return m;
+////////// /  LESSON 12  / EVENT CONTINUE //////////
+let spans = document.querySelectorAll(".simple__text");
+/* console.log(spans); */
+for(let i = 0; i < spans.length; i++) {
+    /* console.log(spans[i].innerHTML); */
 }
-
-let before = [400, 600, 800];
-let ghg = again(before);
-ghg *= 2;
-
-console.log(ghg);
-
-
-
-
 
 
 

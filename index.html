@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Course</title>
+    <title>JScourse</title>
 </head>
 <body>
 
@@ -58,8 +58,54 @@
 
 <!-- ////////////// SECTION TWO ////////////// -->
 <div class="sectionTwo">
-    <input class="input" type="text" name="text" placeholder="Your text:">
 
+<!-- ////////////// FORM ////////////// -->
+<div class="formBlock">
+    <p id="pName">Your form</p>
+
+    <form id="form">
+        <div class="name">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" placeholder="Имя" id="name">
+            </input>
+        </div>
+
+        <div class="name">
+            <label for="password">Пароль:</label>
+            <input type="password" name="pass" placeholder="Пароль" id="pass">
+            </input>
+        </div>
+
+        <div class="name">
+            <label for="repass">Проверка пароля:</label>
+            <input type="text" name="repass" placeholder="Проверка пароля" id="repass">
+            </input>
+        </div>
+
+        <span>Пол:</span>
+
+        <div class="name">
+            <label for="male">Мужской</label>
+            <input type="radio" name="state" value="Мужской" id="mail">
+            </input>
+        </div>
+
+        <div class="name">
+            <label for="male">Женский</label>
+            <input type="radio" name="state" value="Мужской" id="female">
+            </input>
+        </div>
+
+        <div class="name">
+            <input type="button" name="submit" value="Готово" id="buttonHave">
+            </input>
+        </div>
+    </form>
+</div>
+
+
+
+<input class="input" type="text" name="text" placeholder="Your text:">
 <div class="buttonBlock">
     <button class="button" onclick="press(this)">press on me</button>
 </div>

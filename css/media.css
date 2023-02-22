@@ -9,24 +9,28 @@
 
     .technoleges__javascript {
         display: block;
+        transition: opacity 0.3s linear;
     }
 
     .technoleges__react {
         display: block;
+        transition: opacity 0.3s linear;
     }
 
     .technoleges__typeScript {
         display: block;
+        transition: opacity 0.3s linear;
     }
 
     .technoleges__nodeJS {
         display: block;
+        transition: opacity 0.3s linear;
     }
 
     .img__tech {
         margin: auto;
     }
-
+    
     .about__tech {
         padding: 0px 30px 30px 30px;
         margin: 0;
