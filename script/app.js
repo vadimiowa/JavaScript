@@ -345,6 +345,21 @@ for(let i = 0; i < spans.length; i++) {
     /* console.log(spans[i].innerHTML); */
 }
 
+function slip(arr) {
+    let np = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+        np += arr[i];
+    }
+
+    return np;
+}
+
+let hg = [800, 800, 500, 670];
+let projectProgrammig = slip(hg);
+projectProgrammig *= 2;
+console.log(projectProgrammig);
+
 
 
 

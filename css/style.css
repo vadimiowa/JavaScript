@@ -313,7 +313,7 @@ body {
     position: relative;
 
     height: 100vh;
-    background-color: #3d6669;
+    background-color: #5d8a93;
 }
 
 /* /////  FORM  ///// */
@@ -339,19 +339,73 @@ body {
     align-items: flex-start;
 
     margin: 0 auto;
+    background: #0000004a;
+    border-radius: 15px;
+    padding: 30px;
+
+    max-width: 600px;
+    width: 100%;
 }
 
-#name {
+/* //////form_name////// */
+.form__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
 }
-#pass {
+
+.form__state {
     margin-bottom: 10px;
+    font-size: 16px;
 }
-#repass {
-    margin-bottom: 10px;
+
+.form__title {
+    font-family: 'montserrat';
+    font-weight: 600;
+    margin-bottom: 5px;
 }
-#buttonHave {
-    margin-top: 10px;
+
+.form__input {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    height: 28px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.form__input:focus {
+    outline: 0;
+    border-color: black;
+}
+
+.form__state_bu {
+    max-width: 500px;
+    width: 100%;
+}
+.form__state_but {
+    display: block;
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+.form__state_but:hover {
+    background: #00000059;
+    color: #52ffc4;
+}
+.form__state_but:focus {
+    outline: 0;
 }
 
 /* /////  INPUT  ///// */
@@ -385,7 +439,7 @@ body {
     justify-content: center;
     position: absolute;
     z-index: 1000;
-    bottom: 140px;
+    bottom: 75px;
     align-items: center;
 
     max-width: 180px;

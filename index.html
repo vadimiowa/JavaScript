@@ -62,50 +62,52 @@
 <!-- ////////////// FORM ////////////// -->
 <div class="formBlock">
     <p id="pName">Your form</p>
-
+<div class="container">
     <form id="form">
-        <div class="name">
-            <label for="name">Имя:</label>
-            <input type="text" name="name" placeholder="Имя" id="name">
+        <div class="form__name">
+            <label class="form__title" for="name">Имя:</label>
+            <input class="form__input" type="text" name="name" placeholder="Имя" id="name">
             </input>
         </div>
 
-        <div class="name">
-            <label for="password">Пароль:</label>
-            <input type="password" name="pass" placeholder="Пароль" id="pass">
+        <div class="form__name">
+            <label class="form__title" for="password">Пароль:</label>
+            <input class="form__input" type="password" name="pass" placeholder="Пароль" id="pass">
             </input>
         </div>
 
-        <div class="name">
-            <label for="repass">Проверка пароля:</label>
-            <input type="text" name="repass" placeholder="Проверка пароля" id="repass">
+        <div class="form__name">
+            <label class="form__title" for="repass">Проверка пароля:
+            </label>
+            <input class="form__input" type="password" name="repass" placeholder="Проверка пароля" id="repass">
             </input>
         </div>
 
-        <span>Пол:</span>
+        <span class="form__title">Пол:</span>
 
-        <div class="name">
-            <label for="male">Мужской</label>
+        <div class="form__state">
+            <label class="form__title" for="male">Мужской</label>
             <input type="radio" name="state" value="Мужской" id="mail">
             </input>
         </div>
 
-        <div class="name">
-            <label for="male">Женский</label>
+        <div class="form__state">
+            <label class="form__title" for="male">Женский</label>
             <input type="radio" name="state" value="Мужской" id="female">
             </input>
         </div>
 
-        <div class="name">
-            <input type="button" name="submit" value="Готово" id="buttonHave">
+        <div class="form__state_bu">
+            <input class="form__state_but" type="button" name="submit" value="Готово" id="buttonHave">
             </input>
         </div>
     </form>
 </div>
+</div>
 
 
 
-<input class="input" type="text" name="text" placeholder="Your text:">
+<!-- <input class="input" type="text" name="text" placeholder="Your text:"> -->
 <div class="buttonBlock">
     <button class="button" onclick="press(this)">press on me</button>
 </div>
