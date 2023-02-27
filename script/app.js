@@ -339,38 +339,64 @@ function press(el) {
 }
 
 ////////// /  LESSON 12  / EVENT CONTINUE //////////
-let spans = document.querySelectorAll(".simple__text");
-/* console.log(spans); */
-for(let i = 0; i < spans.length; i++) {
-    /* console.log(spans[i].innerHTML); */
-}
+/* document.querySelector("#form").addEventListener("submit", checkForm);
 
-function slip(arr) {
-    let np = 0;
+function checkForm(event) {
+    event.preventDefault();
+    let el = document.querySelector("#form");
 
-    for(let i = 0; i < arr.length; i++) {
-        np += arr[i];
+    let name = el.name.value;
+    let pass = el.pass.value;
+    let repass = el.repass.value;
+    let state = el.state.value;
+
+    let failNone = null;
+    let fail = "";
+    if(name == "" || pass == "" || state == "") {
+        fail = "Enter your information please";
+    } else if(name.length <= 2 || name.length > 50) {
+        fail = "Enter your corectly name";
+    } else if(pass != repass) {
+        fail = "Enyway you need to enter one password"
+    } else if(pass.split("&").length > 1) {
+        fail = "not corectly password";
     }
 
-    return np;
-}
+    if(fail != "") {
+        document.querySelector("#error").innerHTML = fail;
+    } else {
+        document.querySelector("#error").innerHTML = failNone;
+        console.log(" name: " + name + " password: " + pass  + " repassword: " + repass + " state: " + state);
+    }
+} */
 
-let hg = [800, 800, 500, 670];
-let projectProgrammig = slip(hg);
-projectProgrammig *= 2;
-console.log(projectProgrammig);
+let form = document.querySelector("#form");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.querySelector("#name").value;
+    let pass = document.querySelector("#pass").value;
+    let repass = document.querySelector("#repass").value;
+    let state = document.querySelector("#state").value;
+
+    let error = "";
+    let errorNone = null;
+    if(name == "" || pass == "" || repass == "" || state == "") {
+        error = "Заполните поля";
+    } else if(name.length <= 3) {
+        error = "Ведите полное имя"
+    } else if(pass != repass) {
+        error = "Нужно вести одинаковий пароль";
+    }
 
 
-
-
-
-
-
-
-
-
-
-
+    if(error != "") {
+        document.querySelector("#error").innerHTML = error;
+    } else {
+        document.querySelector("#error").innerHTML = errorNone;
+        console.log("name: " + name + "; " + "password: " + pass + "; " + "repass: " + repass + "; " + "state: " + state + ".");
+    }
+})
 
 
 

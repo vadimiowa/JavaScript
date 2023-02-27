@@ -30,11 +30,22 @@
     .img__tech {
         margin: auto;
     }
-    
+
     .about__tech {
         padding: 0px 30px 30px 30px;
         margin: 0;
         font-size: 15px;
         text-align: center;
+    }
+}
+
+
+@media (max-width: 410px) {
+    .buttonMenu {
+        top: 93%;
+    }
+
+    .someText {
+        display: none;
     }
 }
