@@ -38,14 +38,3 @@
         text-align: center;
     }
 }
-
-
-@media (max-width: 410px) {
-    .buttonMenu {
-        top: 93%;
-    }
-
-    .someText {
-        display: none;
-    }
-}
