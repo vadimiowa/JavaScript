@@ -445,7 +445,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    z-index: 1000;
+    z-index: 1;
     bottom: 75px;
     align-items: center;
 
@@ -482,6 +482,61 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 } */
+
+.sectionAbout {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background: #9cbdda;
+}
+
+.gless {
+    margin-top: 50px;
+    height: 0;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.5;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.5s linear;
+}
+
+.glessTwo {
+    margin-top: 50px;
+    height: 0;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0.5;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.5s linear;
+    display: none;
+}
+
+.gless.active {
+    color: red;
+}
+
+.glessTwo.active {
+    color: black;
+}
+
+.timeout {
+    position: absolute;
+    top: 300px;
+
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    background: red;
+    border-radius: 20px;
+    transition: opacity 0.5s linear;
+}
+
+.timeout.active {
+    opacity: 1;
+}
 
 
 

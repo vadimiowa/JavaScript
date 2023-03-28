@@ -18,7 +18,7 @@ console.log("Information: " + num4);
 
 /* option 4 */
 let str1 = 100;
-let str2 = 100;
+let str2 = 100 + 100;
 console.log("Information: " + (str1 + str2));
 
 /* TRANSFORM TEXT IN NUMBER */
@@ -338,7 +338,7 @@ function press(el) {
     el.innerHTML = "PRESS " + pressI;
 }
 
-////////// /  LESSON 12  / EVENT CONTINUE //////////
+////////// /  LESSON 12  / EVENT FORM //////////
 /* document.querySelector("#form").addEventListener("submit", checkForm);
 
 function checkForm(event) {
@@ -397,6 +397,82 @@ form.addEventListener("submit", function(event) {
         console.log("name: " + name + "; " + "password: " + pass + "; " + "repass: " + repass + "; " + "state: " + state + ".");
     }
 })
+
+function phone(arr) {
+    let p = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+        p += arr[i];
+    }
+
+    return p;
+}
+
+let corporation = [600, 500, 300, 460, 380]; //2240
+let phoneArr = phone(corporation);
+phoneArr *= 2;
+
+console.log(phoneArr);
+
+
+document.querySelector(".gless").addEventListener("click", function() {
+    let gless = document.querySelector(".gless");
+    let glessTwo = document.querySelector(".glessTwo");
+
+    if(gless.classList.contains("active")) {
+        gless.classList.remove("active");
+        glessTwo.classList.add("active");
+    } else {
+        gless.classList.add("active");
+        glessTwo.classList.remove("active");
+    }
+})
+
+////////// /  LESSON 13  / TIMERS AND INTERVELS //////////
+
+/* // timeout
+setTimeout(function() {
+    console.log("Hello world !!!");
+
+}, 6000);
+
+// interval
+let id = setInterval(myNewFun, 1000);
+
+let counter = 0;
+function myNewFun() {
+    counter++;
+    console.log("Counter: " + counter);
+
+    if(counter == 5)
+    clearInterval(id);
+} */
+
+let blockRed = document.querySelector(".timeout");
+
+setTimeout(function() {
+    blockRed.classList.add("active");
+}, 1500);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
