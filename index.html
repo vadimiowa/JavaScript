@@ -15,8 +15,13 @@
     <header class="header">
          <div class="container">
             <div class="header__inner">
+
+                <button class="burger" type="button" id="idBurger">
+                    <span class="burger__item"></span>
+                </button>
+
                 <div class="header__logo">API</div>
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a href="#" class="nav__link">JavaScript</a>
                     <a href="#" class="nav__link">REACT</a>
                     <a href="#" class="nav__link">TypeScript</a>
@@ -61,7 +66,6 @@
 
 <!-- ////////////// FORM ////////////// -->
 <div class="formBlock">
-    <p id="pName">Your form</p>
     <div class="container">
         <form id="form" method="post">
             <div class="form__name">
@@ -93,7 +97,7 @@
 
             <div class="form__state">
                 <label class="form__title" for="male">Женский</label>
-                <input type="radio" name="state" value="Мужской" id="state">
+                <input type="radio" name="state" value="Женский" id="state">
                 </input>
             </div>
 
@@ -120,7 +124,9 @@
     <h1 class="gless">interesting</h1>
     <h1 class="glessTwo">interesting</h1>
 
-    <div class="timeout"></div>
+    <div class="timeout">
+        <h1 class="timeout__name">I need to learn English more regulaury and intensively</h1>
+    </div>
 </div>
 
 

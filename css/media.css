@@ -1,6 +1,39 @@
 @media (max-width: 685px) {
+/* NAV */
     .nav {
         display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        align-items: flex-start;
+        background: #000000f0;
+        height: 100vh;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__link {
+        margin-left: 0;
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .nav__link:first-child {
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+/* BURGER */
+    .burger {
+        display: block;
     }
 
     .technoleges {

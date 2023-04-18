@@ -412,7 +412,7 @@ let corporation = [600, 500, 300, 460, 380]; //2240
 let phoneArr = phone(corporation);
 phoneArr *= 2;
 
-console.log(phoneArr);
+//console.log(phoneArr);
 
 
 document.querySelector(".gless").addEventListener("click", function() {
@@ -429,30 +429,74 @@ document.querySelector(".gless").addEventListener("click", function() {
 })
 
 ////////// /  LESSON 13  / TIMERS AND INTERVELS //////////
-
-/* // timeout
-setTimeout(function() {
-    console.log("Hello world !!!");
-
-}, 6000);
-
 // interval
-let id = setInterval(myNewFun, 1000);
+let successful = setInterval(WhatAbout, 1000);
 
-let counter = 0;
-function myNewFun() {
-    counter++;
-    console.log("Counter: " + counter);
+let m = 0;
+function WhatAbout() {
+    m++;
+    /* console.log("info: " + m); */
+    clearInterval(m == 5);
+}
 
-    if(counter == 5)
-    clearInterval(id);
-} */
+// timeout
+let timeOut = setTimeout(newTime, 6000);
 
+function newTime() {
+    /* console.log("Hello world !!!"); */
+}
+
+// timeout
 let blockRed = document.querySelector(".timeout");
 
 setTimeout(function() {
     blockRed.classList.add("active");
 }, 1500);
+
+////////// /  LESSON 14  / OBJECTS //////////
+// Method
+let date = new Date();
+
+console.log(date.getFullYear());
+console.log(date.getMonth() + 1);
+
+console.log("Time: " + date.getHours() + " Min: " + date.getMinutes());
+
+let arrOb = [57, 66, 7, 8, 9, 0];
+console.log(arrOb.sort());
+
+// Class and object
+class Person {
+    constructor(name, age, happiness) {
+        this.name = name;
+        this.age = age;
+        this.happiness = happiness;
+    }
+
+    info() {
+        console.log("Man: " + this.name + " Age: " + this.age);
+    }
+}
+
+
+let alex = new Person("Alex", 30, true);
+let bob = new Person("Bob", 30, true);
+console.log(alex.age);
+
+alex.info();
+bob.info();
+
+
+let burger = document.querySelector("#idBurger");
+let nav = document.querySelector("#nav");
+burger.addEventListener("click", function (e) {
+    e.preventDefault();
+    nav.classList.toggle("active");
+})
+
+burger.addEventListener("click", function () {
+    burger.classList.toggle("active");
+})
 
 
 

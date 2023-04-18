@@ -64,6 +64,46 @@ body {
     padding: 10px;
 }
 
+/* //////  BUREGR  ////// */
+.burger {
+    display: none;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 12px 0;
+    transition: transform 0.2s linear;
+}
+
+.burger.active {
+    transform: rotate(90deg);
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.burger__item:before {
+    top: -8px;
+}
+.burger__item:after {
+    top: 8px;
+}
+
 /* //////  NAV  ////// */
 .nav {
     display: flex;
@@ -317,10 +357,6 @@ body {
 }
 
 /* /////  FORM  ///// */
-#pName {
-    margin: 20px 0px 50px 0px;
-}
-
 .formBlock {
     display: flex;
     flex-direction: column;
@@ -346,6 +382,7 @@ body {
     max-width: 600px;
     width: 100%;
     box-shadow: 0px 20px 50px -10px rgb(45 68 80 / 46%);
+    margin-top: 80px;
 }
 
 /* //////form_name////// */
@@ -524,18 +561,27 @@ body {
 
 .timeout {
     position: absolute;
-    top: 300px;
+    top: 200px;
 
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    width: 300px;
+    height: 300px;
     opacity: 0;
-    background: red;
+    background: #87f2ffba;
     border-radius: 20px;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.8s linear;
 }
 
 .timeout.active {
     opacity: 1;
+}
+
+.timeout__name {
+    color: #0e1144;
 }
 
 
