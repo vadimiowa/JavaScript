@@ -4,8 +4,8 @@
         position: absolute;
         flex-direction: column;
         top: 0;
-        left: -85%;
-        width: 85%;
+        left: -84%;
+        width: 83%;
         align-items: flex-start;
         background: #000000f0;
         height: 100vh;
@@ -19,14 +19,14 @@
     .nav__link {
         margin-left: 0;
         margin-top: 100px;
-        margin-left: 20px;
+        margin-left: 25px;
         font-size: 20px;
         color: #fff;
     }
 
     .nav__link:first-child {
         margin-top: 168px;
-        margin-left: 20px;
+        margin-left: 25px;
         font-size: 20px;
         color: #fff;
     }

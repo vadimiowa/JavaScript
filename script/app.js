@@ -491,6 +491,7 @@ bob.info();
 let burger = document.querySelector("#idBurger");
 let nav = document.querySelector("#nav");
 let plane = document.querySelector("#plane");
+let backgroundHeader = document.querySelector(".header");
 burger.addEventListener("click", function(e) {
     e.preventDefault();
     nav.classList.toggle("active");
@@ -501,12 +502,29 @@ plane.addEventListener("click", function() {
     nav.classList.remove("active");
     burger.classList.remove("active");
     plane.classList.remove("active");
+    backgroundHeader.classList.remove("active");
 })
 
 burger.addEventListener("click", function() {
     burger.classList.toggle("active");
+    backgroundHeader.classList.toggle("active");
 })
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    let links = document.querySelectorAll(".nav__link");
+
+    for(let i = 0; i < links.length; i++)
+        links[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            nav.classList.remove("active");
+            burger.classList.remove("active");
+            plane.classList.remove("active");
+            backgroundHeader.classList.remove("active");
+        })
+
+        console.log(links);
+})
 
 
 
