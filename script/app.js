@@ -487,18 +487,25 @@ alex.info();
 bob.info();
 
 
+/* MENU BURGER */
 let burger = document.querySelector("#idBurger");
 let nav = document.querySelector("#nav");
-burger.addEventListener("click", function (e) {
+let plane = document.querySelector("#plane");
+burger.addEventListener("click", function(e) {
     e.preventDefault();
     nav.classList.toggle("active");
+    plane.classList.toggle("active");
 })
 
-burger.addEventListener("click", function () {
+plane.addEventListener("click", function() {
+    nav.classList.remove("active");
+    burger.classList.remove("active");
+    plane.classList.remove("active");
+})
+
+burger.addEventListener("click", function() {
     burger.classList.toggle("active");
 })
-
-
 
 
 

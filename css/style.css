@@ -72,6 +72,7 @@ body {
     cursor: pointer;
     padding: 12px 0;
     transition: transform 0.2s linear;
+    z-index: 1000;
 }
 
 .burger.active {
@@ -80,7 +81,7 @@ body {
 
 .burger__item {
     display: block;
-    width: 30px;
+    width: 26px;
     height: 4px;
     background-color: black;
     position: relative;
@@ -98,10 +99,10 @@ body {
     z-index: 1;
 }
 .burger__item:before {
-    top: -8px;
+    top: -7px;
 }
 .burger__item:after {
-    top: 8px;
+    top: 7px;
 }
 
 /* //////  NAV  ////// */
@@ -149,6 +150,19 @@ body {
     margin: 0;
 }
 
+/* /////  PLANE  ///// */
+.plane {
+    display: none;
+    position: fixed;
+    width: 15%;
+    right: 0;
+    height: 100vh;
+    z-index: 1000;
+    opacity: 0;
+}
+.plane.active {
+    display: block;
+}
 
 /* /////  SECTION ONE  ///// */
 .sectionOne {
