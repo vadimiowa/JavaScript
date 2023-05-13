@@ -36,7 +36,7 @@ body {
 }
 
 .header.active {
-    background: #ffffff5e;
+    background: none;
 }
 
 @keyframes header {
@@ -159,14 +159,14 @@ body {
 .plane {
     display: none;
     position: fixed;
-    width: 18%;
+    width: 100%;
     right: 0;
     height: 100vh;
-    z-index: 1000;
-    opacity: 0;
+    z-index: 1;
 }
 .plane.active {
     display: block;
+    background-color: #ffffffa6;
 }
 
 /* /////  SECTION ONE  ///// */
