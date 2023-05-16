@@ -162,7 +162,7 @@ body {
     width: 100%;
     right: 0;
     height: 100vh;
-    z-index: 1;
+    z-index: 2;
 }
 .plane.active {
     display: block;

@@ -435,7 +435,7 @@ let successful = setInterval(WhatAbout, 1000);
 let m = 0;
 function WhatAbout() {
     m++;
-    /* console.log("info: " + m); */
+   /*  console.log("info: " + m); */
     clearInterval(m == 5);
 }
 
@@ -523,12 +523,45 @@ document.addEventListener("DOMContentLoaded", function() {
             backgroundHeader.classList.remove("active");
         })
 
-        console.log(links);
+       // console.log(links);
 })
 
+function arrPmP(arr) {
+    let b = 0;
 
+    for(i = 0; i < arr.length; i++) {
+        b += arr[i];
+    }
 
+    return b;
+}
+
+let infoAboutArr = [100, 600, 550, 340];
+let infoAboutArr1 = [100, 600, 550, 340];
+let infoAboutArr2 = [100, 600, 550, 340, 100, 600, 550, 340];
+let resualtAboutIt = arrPmP(infoAboutArr2);
+resualtAboutIt *= 3;
+resualtAboutIt /= 2;
+console.log(resualtAboutIt);
 // I want to continue
+
+
+/* COURSE ABOUT ALGORITHMS */
+// the algorithm is search
+let arrayAlgori = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
+let count = 0;
+function linearSearch(arrayAlgori, item) {
+    for(let i = 0; i < arrayAlgori.length; i++) {
+        count += 1;
+        if(arrayAlgori[i] == item) {
+            return i;
+        }
+    }
+
+    return null;
+}
+
+console.log(linearSearch(arrayAlgori, 11));
 
 
 
