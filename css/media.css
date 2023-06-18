@@ -70,4 +70,17 @@
         font-size: 15px;
         text-align: center;
     }
+    /* WINDOW ABOUT */
+    .windowAbout {
+        flex-wrap: wrap;
+        margin-top: -16px;
+    }
+    .windowAbout__js {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .windowAbout__js:first-child{
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
 }

@@ -332,71 +332,29 @@ document.querySelector("#node").addEventListener("click", function() {
     }
 })
 
-let pressI = 0;
-function press(el) {
-    pressI++;
-    el.innerHTML = "PRESS " + pressI;
-}
+////////// /  LESSON 12  / EVENT FORM //////////
+
+// i need to create new interesting form for regrest
+let press1 = document.querySelector(".img__press1");
+let infoJs1 = document.querySelector(".windowAbout__info1");
+press1.addEventListener("click", function() {
+    infoJs1.classList.toggle("active");
+    press1.classList.toggle("active");
+})
+let press2 = document.querySelector(".img__press2");
+let infoJs2 = document.querySelector(".windowAbout__info2");
+press2.addEventListener("click", function() {
+    infoJs2.classList.toggle("active");
+    press2.classList.toggle("active");
+})
+let press3 = document.querySelector(".img__press3");
+let infoJs3 = document.querySelector(".windowAbout__info3");
+press3.addEventListener("click", function() {
+    infoJs3.classList.toggle("active");
+    press3.classList.toggle("active");
+})
 
 ////////// /  LESSON 12  / EVENT FORM //////////
-/* document.querySelector("#form").addEventListener("submit", checkForm);
-
-function checkForm(event) {
-    event.preventDefault();
-    let el = document.querySelector("#form");
-
-    let name = el.name.value;
-    let pass = el.pass.value;
-    let repass = el.repass.value;
-    let state = el.state.value;
-
-    let failNone = null;
-    let fail = "";
-    if(name == "" || pass == "" || state == "") {
-        fail = "Enter your information please";
-    } else if(name.length <= 2 || name.length > 50) {
-        fail = "Enter your corectly name";
-    } else if(pass != repass) {
-        fail = "Enyway you need to enter one password"
-    } else if(pass.split("&").length > 1) {
-        fail = "not corectly password";
-    }
-
-    if(fail != "") {
-        document.querySelector("#error").innerHTML = fail;
-    } else {
-        document.querySelector("#error").innerHTML = failNone;
-        console.log(" name: " + name + " password: " + pass  + " repassword: " + repass + " state: " + state);
-    }
-} */
-
-let form = document.querySelector("#form");
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    let name = document.querySelector("#name").value;
-    let pass = document.querySelector("#pass").value;
-    let repass = document.querySelector("#repass").value;
-    let state = document.querySelector("#state").value;
-
-    let error = "";
-    let errorNone = null;
-    if(name == "" || pass == "" || repass == "" || state == "") {
-        error = "Заполните поля";
-    } else if(name.length <= 3) {
-        error = "Ведите полное имя"
-    } else if(pass != repass) {
-        error = "Нужно вести одинаковий пароль";
-    }
-
-
-    if(error != "") {
-        document.querySelector("#error").innerHTML = error;
-    } else {
-        document.querySelector("#error").innerHTML = errorNone;
-        console.log("name: " + name + "; " + "password: " + pass + "; " + "repass: " + repass + "; " + "state: " + state + ".");
-    }
-})
 
 function phone(arr) {
     let p = 0;
@@ -415,7 +373,7 @@ phoneArr *= 2;
 //console.log(phoneArr);
 
 
-document.querySelector(".gless").addEventListener("click", function() {
+/* document.querySelector(".gless").addEventListener("click", function() {
     let gless = document.querySelector(".gless");
     let glessTwo = document.querySelector(".glessTwo");
 
@@ -426,7 +384,7 @@ document.querySelector(".gless").addEventListener("click", function() {
         gless.classList.add("active");
         glessTwo.classList.remove("active");
     }
-})
+}) */
 
 ////////// /  LESSON 13  / TIMERS AND INTERVELS //////////
 // interval
@@ -539,9 +497,8 @@ function arrPmP(arr) {
 let infoAboutArr = [100, 600, 550, 340];
 let infoAboutArr1 = [100, 600, 550, 340];
 let infoAboutArr2 = [100, 600, 550, 340, 100, 600, 550, 340];
-let resualtAboutIt = arrPmP(infoAboutArr2);
-resualtAboutIt *= 3;
-resualtAboutIt /= 2;
+let resualtAboutIt = arrPmP(infoAboutArr);
+resualtAboutIt *= 2;
 console.log(resualtAboutIt);
 // I want to continue
 
@@ -562,16 +519,8 @@ function linearSearch(arrayAlgori, item) {
 }
 
 console.log(linearSearch(arrayAlgori, 11));
-
-
-
-
-
-
-
-
-
-
+console.log(linearSearch(arrayAlgori, 4));
+console.log(linearSearch(arrayAlgori, 5));
 
 
 
