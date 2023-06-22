@@ -91,6 +91,7 @@ body {
     height: 4px;
     background-color: #444444;
     position: relative;
+    border-radius: 2px;
 }
 
 .burger__item:before,
@@ -103,6 +104,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+    border-radius: 2px;
 }
 .burger__item:before {
     top: -7px;
@@ -148,6 +150,9 @@ body {
     opacity: 0.5;
 }
 
+.nav__link:hover:first-child {
+    color: #ffffff;
+}
 .nav__link:hover {
     color: #ffffff;
 }
@@ -376,9 +381,9 @@ body {
 
 .img__press1 {
     display: block;
-    width: 180px;
+    width: 170px;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: pointer;
     transition: transform 0.2s linear;
 }
@@ -389,9 +394,9 @@ body {
 }
 .img__press2 {
     display: block;
-    width: 180px;
+    width: 170px;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: pointer;
     transition: transform 0.2s linear;
 }
@@ -402,9 +407,9 @@ body {
 }
 .img__press3 {
     display: block;
-    width: 180px;
+    width: 170px;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: pointer;
     transition: transform 0.2s linear;
 }
@@ -424,6 +429,9 @@ body {
     position: absolute;
     top: -100%;
     transition: 0.5s;
+    text-align: center;
+    padding: 150px 40px 0px 40px;
+    color: #fffdc9;
 }
 .windowAbout__info1.active {
     top: 0;
@@ -439,6 +447,9 @@ body {
     position: absolute;
     top: -100%;
     transition: 0.5s;
+    text-align: center;
+    padding: 150px 40px 0px 40px;
+    color: #fffdc9;
 }
 .windowAbout__info2.active {
     top: 0;
@@ -453,6 +464,9 @@ body {
     position: absolute;
     top: -100%;
     transition: 0.5s;
+    text-align: center;
+    padding: 150px 40px 0px 40px;
+    color: #fffdc9;
 }
 .windowAbout__info3.active {
     top: 0;

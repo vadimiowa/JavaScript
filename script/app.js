@@ -333,25 +333,37 @@ document.querySelector("#node").addEventListener("click", function() {
 })
 
 ////////// /  LESSON 12  / EVENT FORM //////////
-
 // i need to create new interesting form for regrest
+////////// /  WINDOW FUNCTION//////////
 let press1 = document.querySelector(".img__press1");
 let infoJs1 = document.querySelector(".windowAbout__info1");
 press1.addEventListener("click", function() {
     infoJs1.classList.toggle("active");
     press1.classList.toggle("active");
+    infoJs2.classList.remove("active");
+    press2.classList.remove("active");
+    infoJs3.classList.remove("active");
+    press3.classList.remove("active");
 })
 let press2 = document.querySelector(".img__press2");
 let infoJs2 = document.querySelector(".windowAbout__info2");
 press2.addEventListener("click", function() {
     infoJs2.classList.toggle("active");
     press2.classList.toggle("active");
+    infoJs1.classList.remove("active");
+    press1.classList.remove("active");
+    infoJs3.classList.remove("active");
+    press3.classList.remove("active");
 })
 let press3 = document.querySelector(".img__press3");
 let infoJs3 = document.querySelector(".windowAbout__info3");
 press3.addEventListener("click", function() {
     infoJs3.classList.toggle("active");
     press3.classList.toggle("active");
+    infoJs1.classList.remove("active");
+    press1.classList.remove("active");
+    infoJs2.classList.remove("active");
+    press2.classList.remove("active");
 })
 
 ////////// /  LESSON 12  / EVENT FORM //////////

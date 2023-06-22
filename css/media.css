@@ -7,7 +7,7 @@
         left: -84%;
         width: 83%;
         align-items: flex-start;
-        background: #000000f0;
+        background: #60ffd7;
         height: 100vh;
         transition: 0.3s;
     }
@@ -21,14 +21,14 @@
         margin-top: 100px;
         margin-left: 25px;
         font-size: 20px;
-        color: #fff;
+        color: #000;
     }
 
     .nav__link:first-child {
         margin-top: 168px;
         margin-left: 25px;
         font-size: 20px;
-        color: #fff;
+        color: #000;
     }
 
 /* BURGER */
