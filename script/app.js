@@ -405,7 +405,7 @@ let successful = setInterval(WhatAbout, 1000);
 let m = 0;
 function WhatAbout() {
     m++;
-   /*  console.log("info: " + m); */
+    /* console.log("info: " + m); */
     clearInterval(m == 5);
 }
 
@@ -417,11 +417,11 @@ function newTime() {
 }
 
 // timeout
-let blockRed = document.querySelector(".timeout");
+/* let blockRed = document.querySelector(".timeout");
 
 setTimeout(function() {
     blockRed.classList.add("active");
-}, 1500);
+}, 1500); */
 
 ////////// /  LESSON 14  / OBJECTS //////////
 // Method
@@ -535,8 +535,39 @@ console.log(linearSearch(arrayAlgori, 4));
 console.log(linearSearch(arrayAlgori, 5));
 
 
+function justDO(arr) {
+    let pm = 0;
+
+    for(let i = 0; i < arr.length; i++) {
+        pm += arr[i];
+    }
+
+    return pm;
+}
+
+let kkklll = [400, 500, 600, 700];
 
 
+let fustDOM = justDO(kkklll);
+console.log(fustDOM);
 
+/*  */
 
+let boxes = Array.from(document.querySelectorAll(".accord__box"));
 
+boxes.forEach((accord__box) => {
+    accord__box.addEventListener("click", boxHandler);
+});
+
+function boxHandler(e) {
+    e.preventDefault;
+    let currentBox = e.target.closest(".accord__bottom");
+    let currentContent = e.target.nextElementSibling;
+    currentBox.classList.toggle("active");
+
+    if(currentBox.classList.contains("active")) {
+        currentContent.style.maxHeight = currentContent.scrollHeight +"px";
+    } else {
+        currentContent.style.maxHeight = 0;
+    }
+}

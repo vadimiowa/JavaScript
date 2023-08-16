@@ -356,6 +356,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .windowAbout__js {
@@ -472,39 +473,6 @@ body {
     top: 0;
 }
 
-/* /////  BUTTON  ///// */
-.buttonBlock {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    bottom: 75px;
-    align-items: center;
-
-    max-width: 180px;
-    width: 100%;
-}
-
-.button {
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 0;
-    font-size: 13px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #000000a1;
-
-    transition: background 0.1s linear, color 0.1s linear;
-}
-
-.button:hover {
-    background: #fff;
-    color: #000;
-}
-
 /* .textGradient {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -515,80 +483,52 @@ body {
     -webkit-background-clip: text;
 } */
 
-.sectionAbout {
+/* .sectionAbout {
     display: flex;
     justify-content: center;
     position: relative;
     height: 100vh;
-}
+} */
 
-.gless {
-    margin-top: 50px;
-    height: 0;
-    font-size: 25px;
-    font-weight: 700;
-    opacity: 0.5;
-    color: #000;
-    cursor: pointer;
-    transition: color 0.5s linear;
-}
 
-.glessTwo {
-    margin-top: 50px;
-    height: 0;
-    font-size: 25px;
-    font-weight: 700;
-    opacity: 0.5;
-    color: #000;
-    cursor: pointer;
-    transition: color 0.5s linear;
-    display: none;
-}
-
-.gless.active {
-    color: red;
-}
-
-.glessTwo.active {
-    color: black;
-}
-
-.timeout {
-    position: absolute;
-    top: 200px;
-
+/* SECTION ACCORD */
+.accord {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 30px;
+}
+.accord__box {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.accord__bottom {
+    position: relative;
+    padding: 20px;
+    background-color: blue;
     text-align: center;
-
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-    background: #87f2ffba;
-    border-radius: 20px;
-    transition: opacity 0.8s linear;
+    cursor: pointer;
 }
 
-.timeout.active {
-    opacity: 1;
+.accord__content {
+    position: relative;
+    width: 100%;
+    background-color: #ccc;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
 }
 
-.timeout__name {
-    color: #0e1144;
+.accord__content p {
+    padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.accord__content.active {
+    max-height: 100%;
+}
 
 
