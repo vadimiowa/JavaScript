@@ -31,6 +31,15 @@
         color: #000;
     }
 
+    .buttonMenu {
+        top: 85%;
+        width: 90%;
+    }
+
+    .sectionOne {
+        margin-bottom: 50px;
+    }
+
 /* BURGER */
     .burger {
         display: block;
@@ -74,6 +83,7 @@
     .windowAbout {
         flex-wrap: wrap;
         margin-top: -16px;
+        margin-bottom: 60px;
     }
     .windowAbout__js {
         margin-right: 0;
@@ -82,5 +92,10 @@
     .windowAbout__js:first-child{
         margin-left: 0;
         margin-bottom: 40px;
+    }
+
+    /* ACCORD */
+    .accord {
+        margin: auto;
     }
 }

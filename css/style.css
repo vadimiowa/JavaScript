@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'montserrat';
-    background: #96b3b9;
+    background: #96b3b9db;
 }
 
 *,
@@ -313,14 +313,17 @@ body {
     margin: 30px;
 }
 
-/* //////// button //////// */
+/* ///// button ///// */
 .buttonMenu {
     display: flex;
     justify-content: space-between;
 
     position: absolute;
-    top: 85%;
-    width: 90%;
+    top: 80%;
+    width: 75%;
+    background: #ffffffd9;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .buMe__info {
@@ -355,8 +358,8 @@ body {
 .windowAbout {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 90px;
 }
 
 .windowAbout__js {
@@ -497,8 +500,13 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
     padding: 30px;
+    background: #ccc;
+    border-radius: 30px;
+
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 .accord__box {
     margin-bottom: 20px;
@@ -509,9 +517,31 @@ body {
 .accord__bottom {
     position: relative;
     padding: 20px;
-    background-color: blue;
-    text-align: center;
+    height: 60px;
+    background: #00ff97db;;
     cursor: pointer;
+    font-weight: 600;
+}
+.accord__box:last-child {
+    margin: 0;
+}
+
+.accord__bottom:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s;
+}
+.accord__bottom.active:after {
+    transform: rotate(-135deg);
 }
 
 .accord__content {
@@ -521,14 +551,142 @@ body {
     overflow: hidden;
     max-height: 0;
     transition: 0.3s;
+    text-align: center;
 }
 
 .accord__content p {
     padding: 20px;
+    margin: 0;
 }
 
 .accord__content.active {
     max-height: 100%;
 }
+
+
+/* SECTION MOVE-ACCORD */
+.move {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 30px;
+    background: #c4ffb18a;
+    border-radius: 30px;
+    margin-top: 60px;
+}
+.move__box {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.move__box:last-child {
+    margin-bottom: 0;
+}
+
+.move__bottom {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #7a5bb38c;
+    cursor: pointer;
+    font-weight: 600;
+}
+.move__bottom:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s;
+}
+.move__bottom.active:after {
+    transform: rotate(-135deg);
+}
+
+.move__content {
+    width: 100%;
+    background-color: #7a5bb38c;
+    overflow: hidden;
+    max-height: 0;
+    text-align: center;
+    transition: 0.3s;
+}
+.move__content p {
+    padding: 20px;
+    margin: 0;
+}
+
+
+/*//// ACCORD BLACK ////*/
+.accordBlack {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #ccc;
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.accordBlack__box {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.accordBlack__box:last-child{
+    margin: 0;
+}
+
+.accordBlack__botton {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #00000059;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.accordBlack__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+}
+.accordBlack__content p {
+    padding: 20px 0px 20px 25px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

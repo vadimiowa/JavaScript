@@ -553,10 +553,10 @@ console.log(fustDOM);
 
 /*  */
 
-let boxes = Array.from(document.querySelectorAll(".accord__box"));
+let boxes = Array.from(document.querySelectorAll(".accord__bottom"));
 
-boxes.forEach((accord__box) => {
-    accord__box.addEventListener("click", boxHandler);
+boxes.forEach((accord__bottom) => {
+    accord__bottom.addEventListener("click", boxHandler);
 });
 
 function boxHandler(e) {
@@ -571,3 +571,103 @@ function boxHandler(e) {
         currentContent.style.maxHeight = 0;
     }
 }
+
+
+/*  */
+/* document.addEventListener("DOMContentLoaded", function() {
+    let moveBottom = document.querySelectorAll(".move__bottom");
+
+    for(let i = 0; i < moveBottom.length; i++) {
+
+        moveBottom[i].addEventListener("click", function(e) {
+            e.preventDefault;
+            let moveBottom = e.target.closest(".move__bottom");
+            let moveContent = e.target.nextElementSibling;
+            moveBottom.classList.toggle("active");
+
+            if(moveBottom.classList.contains("active")) {
+                moveContent.style.maxHeight = moveContent.scrollHeight + "px";
+            } else {
+                moveContent.style.maxHeight = 0;
+            }
+        })
+    }
+}) */
+
+document.addEventListener("DOMContentLoaded", function() {
+    let moveBottom = document.querySelectorAll(".move__bottom");
+
+    for(let i = 0; i < moveBottom.length; i++) {
+        moveBottom[i].addEventListener("click", moveName);
+    }
+});
+
+function moveName(e) {
+    e.preventDefault;
+    let moveBottom = e.target.closest(".move__bottom");
+    let moveContent = e.target.nextElementSibling;
+    moveBottom.classList.toggle("active");
+
+    if(moveBottom.classList.contains("active")) {
+        moveContent.style.maxHeight = moveContent.scrollHeight + "px";
+    } else {
+        moveContent.style.maxHeight = 0;
+    }
+};
+
+
+let kkckl = [300, 5550, 600, 200, 700];
+for(let i = 0; i < kkckl.length; i++) {
+    console.log("How mach " + i + ": " + kkckl[i]);
+}
+
+
+
+
+/* ///////////////////////////////////////////////////////////// */
+document.addEventListener("DOMContentLoaded", function() {
+    let blackBotton = document.querySelectorAll(".accordBlack__botton");
+
+    for(let i = 0; i < blackBotton.length; i++) {
+        blackBotton[i].addEventListener("click", function(index1, index2) {
+            index1.preventDefault;
+
+            blackBotton[i].closest;
+            let blackContent = index1.target.nextElementSibling;
+            blackBotton[i].classList.toggle("active");
+
+            if(blackBotton[i].classList.contains("active")) {
+                blackContent.style.maxHeight = blackContent.scrollHeight + "px";
+            } else {
+                blackContent.style.maxHeight = 0;
+            }
+
+            removeActive(index2);
+        })
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
