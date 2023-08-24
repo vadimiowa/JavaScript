@@ -629,7 +629,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let blackBotton = document.querySelectorAll(".accordBlack__botton");
 
     for(let i = 0; i < blackBotton.length; i++) {
-        blackBotton[i].addEventListener("click", function(index1, index2) {
+        blackBotton[i].addEventListener("click", function(index1) {
             index1.preventDefault;
 
             blackBotton[i].closest;
@@ -642,7 +642,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 blackContent.style.maxHeight = 0;
             }
 
-            removeActive(index2);
+            /* removeActive(index2); */
         })
     }
 });
