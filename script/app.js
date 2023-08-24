@@ -625,27 +625,6 @@ for(let i = 0; i < kkckl.length; i++) {
 
 
 /* ///////////////////////////////////////////////////////////// */
-document.addEventListener("DOMContentLoaded", function() {
-    let blackBotton = document.querySelectorAll(".accordBlack__botton");
-
-    for(let i = 0; i < blackBotton.length; i++) {
-        blackBotton[i].addEventListener("click", function(index1) {
-            index1.preventDefault;
-
-            blackBotton[i].closest;
-            let blackContent = index1.target.nextElementSibling;
-            blackBotton[i].classList.toggle("active");
-
-            if(blackBotton[i].classList.contains("active")) {
-                blackContent.style.maxHeight = blackContent.scrollHeight + "px";
-            } else {
-                blackContent.style.maxHeight = 0;
-            }
-
-            /* removeActive(index2); */
-        })
-    }
-});
 
 
 
