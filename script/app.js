@@ -551,82 +551,104 @@ let kkklll = [400, 500, 600, 700];
 let fustDOM = justDO(kkklll);
 console.log(fustDOM);
 
-/*  */
 
-let boxes = Array.from(document.querySelectorAll(".accord__bottom"));
 
-boxes.forEach((accord__bottom) => {
-    accord__bottom.addEventListener("click", boxHandler);
-});
+/* SOME ACCORDIONS */
+/* ///////////////////////////////1////////////////////////////// */
+const accordBoxes = document.querySelectorAll(".accord__box");
 
-function boxHandler(e) {
-    e.preventDefault;
-    let currentBox = e.target.closest(".accord__bottom");
-    let currentContent = e.target.nextElementSibling;
-    currentBox.classList.toggle("active");
+accordBoxes.forEach((item, index) => {
+    let accordBotton = item.querySelector(".accord__bottom");
+    accordBotton.addEventListener("click", function() {
+        accordBotton.classList.toggle("active");
 
-    if(currentBox.classList.contains("active")) {
-        currentContent.style.maxHeight = currentContent.scrollHeight +"px";
-    } else {
-        currentContent.style.maxHeight = 0;
-    }
+        let accordContent = item.querySelector(".accord__content");
+        if(accordBotton.classList.contains("active")) {
+            accordContent.style.maxHeight = accordContent.scrollHeight + "px";
+        } else {
+            accordContent.style.maxHeight = 0;
+        }
+
+        removeAccordContent(index);
+    })
+})
+
+function removeAccordContent(index) {
+    accordBoxes.forEach((item2, index2) => {
+        if(index != index2) {
+            item2.classList.remove("active");
+
+            let removeBotton = item2.querySelector(".accord__bottom");
+            removeBotton.classList.remove("active");
+            let removeContent = item2.querySelector(".accord__content");
+            removeContent.style.maxHeight = 0;
+        }
+    })
 }
 
+/* ///////////////////////////////2////////////////////////////// */
+const moveBoxes = document.querySelectorAll(".move__box");
 
-/*  */
-/* document.addEventListener("DOMContentLoaded", function() {
-    let moveBottom = document.querySelectorAll(".move__bottom");
+moveBoxes.forEach((item, index) => {
+    let moveBotton = item.querySelector(".move__bottom");
+    moveBotton.addEventListener("click", () => {
+        moveBotton.classList.toggle("active");
 
-    for(let i = 0; i < moveBottom.length; i++) {
+        let moveContent = item.querySelector(".move__content");
+        if(moveBotton.classList.contains("active")) {
+            moveContent.style.maxHeight = moveContent.scrollHeight + "px";
+        } else {
+            moveContent.style.maxHeight = 0;
+        }
 
-        moveBottom[i].addEventListener("click", function(e) {
-            e.preventDefault;
-            let moveBottom = e.target.closest(".move__bottom");
-            let moveContent = e.target.nextElementSibling;
-            moveBottom.classList.toggle("active");
+        removeMoveContent(index);
+    })
+})
 
-            if(moveBottom.classList.contains("active")) {
-                moveContent.style.maxHeight = moveContent.scrollHeight + "px";
-            } else {
-                moveContent.style.maxHeight = 0;
-            }
-        })
-    }
-}) */
+function removeMoveContent(index) {
+    moveBoxes.forEach((item2, index2) => {
+        if(index != index2) {
+            item2.classList.remove("active");
 
-document.addEventListener("DOMContentLoaded", function() {
-    let moveBottom = document.querySelectorAll(".move__bottom");
-
-    for(let i = 0; i < moveBottom.length; i++) {
-        moveBottom[i].addEventListener("click", moveName);
-    }
-});
-
-function moveName(e) {
-    e.preventDefault;
-    let moveBottom = e.target.closest(".move__bottom");
-    let moveContent = e.target.nextElementSibling;
-    moveBottom.classList.toggle("active");
-
-    if(moveBottom.classList.contains("active")) {
-        moveContent.style.maxHeight = moveContent.scrollHeight + "px";
-    } else {
-        moveContent.style.maxHeight = 0;
-    }
-};
-
-
-let kkckl = [300, 5550, 600, 200, 700];
-for(let i = 0; i < kkckl.length; i++) {
-    console.log("How mach " + i + ": " + kkckl[i]);
+            let removeBotton = item2.querySelector(".move__bottom");
+            removeBotton.classList.remove("active");
+            let removeContent = item2.querySelector(".move__content");
+            removeContent.style.maxHeight = 0;
+        }
+    })
 }
 
+/* ///////////////////////////////3////////////////////////////// */
+const accordBlackContent = document.querySelectorAll(".accordBlack__box");
 
+accordBlackContent.forEach((item, index) => {
+    let blackBotton = item.querySelector(".accordBlack__botton");
+    blackBotton.addEventListener("click", () => {
+        blackBotton.classList.toggle("active");
 
+        let blackContent = item.querySelector(".accordBlack__content");
+        if(blackBotton.classList.contains("active")) {
+            blackContent.style.maxHeight = blackContent.scrollHeight + "px";
+        } else {
+            blackContent.style.maxHeight = 0;
+        }
 
-/* ///////////////////////////////////////////////////////////// */
+        removeContent(index);
+    })
+})
 
+function removeContent(index) {
+    accordBlackContent.forEach((item2, index2) => {
+        if(index != index2) {
+            item2.classList.remove("active");
 
+            let box = item2.querySelector(".accordBlack__botton");
+            box.classList.remove("active");
+            let content = item2.querySelector(".accordBlack__content");
+            content.style.maxHeight = "0px";
+        }
+    })
+}
 
 
 

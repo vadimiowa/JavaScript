@@ -589,7 +589,7 @@ body {
     position: relative;
     width: 100%;
     padding: 20px;
-    background-color: #7a5bb38c;
+    background-color: #bf8bff66;
     cursor: pointer;
     font-weight: 600;
 }
@@ -613,7 +613,7 @@ body {
 
 .move__content {
     width: 100%;
-    background-color: #7a5bb38c;
+    background-color: #bf8bff66;
     overflow: hidden;
     max-height: 0;
     text-align: center;
@@ -642,6 +642,7 @@ body {
     max-width: 800px;
     margin-bottom: 20px;
 }
+
 .accordBlack__box:last-child{
     margin: 0;
 }
@@ -653,6 +654,25 @@ body {
     background-color: #00000059;
     cursor: pointer;
     font-weight: 600;
+    transition: background 0.2s linear;
+}
+.accordBlack__botton:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: rotate(45deg);
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s;
+}
+
+.accordBlack__botton.active:after {
+    transform: rotate(-135deg);
 }
 
 .accordBlack__content {
