@@ -121,6 +121,10 @@ body {
     padding-top: 2px;
 }
 
+.nav__light {
+    display: none;
+}
+
 .nav__link {
     position: relative;
     text-decoration: none;
@@ -589,7 +593,7 @@ body {
     position: relative;
     width: 100%;
     padding: 20px;
-    background-color: #bf8bff66;
+    background-color: #ffffffd4;
     cursor: pointer;
     font-weight: 600;
 }
@@ -613,7 +617,6 @@ body {
 
 .move__content {
     width: 100%;
-    background-color: #bf8bff66;
     overflow: hidden;
     max-height: 0;
     text-align: center;

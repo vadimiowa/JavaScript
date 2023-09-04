@@ -650,8 +650,41 @@ function removeContent(index) {
     })
 }
 
+/* LIGHT LIGHT LIGHT */
+const blockInner = document.querySelectorAll(".header__inner");
 
+blockInner.forEach((event) => {
+    let light = event.querySelector(".nav__light");
+    light.addEventListener("click", function() {
+        light.classList.toggle("active");
 
+        let i1 = event.querySelector("#i1");
+        let i2 = event.querySelector("#i2");
+        let i3 = event.querySelector("#i3");
+        let i4 = event.querySelector("#i4");
+        let plane = document.querySelector(".plane");
+        let nav = document.querySelector(".nav");
+        let body = document.querySelector("body");
+        let header = document.querySelector(".header");
+        if(light.classList.contains("active")) {
+            i1.style.color = "white";
+            i2.style.color = "white";
+            i3.style.color = "white";
+            i4.style.color = "white";
+            plane.style.backgroundColor = "#000000a6";
+            nav.style.backgroundColor = "rgb(0 0 0 / 79%)";
+            body.style.backgroundColor = "rgb(60 60 60)";
+        } else {
+            i1.style.color = "#000";
+            i2.style.color = "#000";
+            i3.style.color = "#000";
+            i4.style.color = "#000";
+            plane.style.backgroundColor = "#ffffffa6";
+            nav.style.backgroundColor = "#60ffd7";
+            body.style.backgroundColor = "#96b3b9db";
+        }
+    })
+})
 
 
 
