@@ -11,6 +11,9 @@
         height: 100vh;
         transition: 0.3s;
     }
+    .nav.blackColor {
+        background-color: #000;
+    }
 /* LIGHT LIGHT LIGHT */
     .nav__light {
         display: block;
