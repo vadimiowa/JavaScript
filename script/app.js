@@ -466,6 +466,12 @@ burger.addEventListener("click", function(e) {
     e.preventDefault();
     nav.classList.toggle("active");
     plane.classList.toggle("active");
+
+    if(burger.classList.contains("active")) {
+        document.body.style.overflow = 'auto';
+    } else {
+        document.body.style.overflow = 'hidden';
+    }
 })
 
 plane.addEventListener("click", function() {
@@ -473,6 +479,7 @@ plane.addEventListener("click", function() {
     burger.classList.remove("active");
     plane.classList.remove("active");
     backgroundHeader.classList.remove("active");
+    document.body.style.overflow = 'auto';
 })
 
 burger.addEventListener("click", function() {
@@ -491,6 +498,7 @@ document.addEventListener("DOMContentLoaded", function() {
             burger.classList.remove("active");
             plane.classList.remove("active");
             backgroundHeader.classList.remove("active");
+            document.body.style.overflow = 'auto';
         })
 
        // console.log(links);
